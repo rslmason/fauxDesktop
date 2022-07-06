@@ -1,0 +1,526 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "Microsoft Sans Serif";
+  src: local("Microsoft Sans Serif");
+}
+@font-face {
+  font-family: "MS Sans Serif";
+  src: url("../assets/fonts/MS Sans Serif 8pt.ttf");
+}
+@font-face {
+  font-family: "MS Sans Serif Bold";
+  src: url("../assets/fonts/MS Sans Serif 8pt bold.ttf");
+}
+html {
+  font-size: 62.5%;
+  font-family: "MS Sans Serif Bold";
+  line-height: 1.3rem;
+}
+
+button {
+  font-family: inherit;
+  border: white 2px outset;
+  margin: 2px;
+}
+button:focus::after {
+  content: "";
+  position: absolute;
+  inset: 2.2px;
+  border: black 1px dotted;
+}
+button:active {
+  border: white 2px inset;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.hidden {
+  visibility: hidden;
+  position: absolute;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.taskbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  height: 50px;
+  background-color: #bdbdbd;
+  border: white 2px outset;
+}
+.taskbar nav {
+  position: relative;
+  margin-right: 10px;
+}
+.taskbar nav .startMenuButton {
+  width: 100px;
+  height: 100%;
+  background: url("../assets/smallLogo.bmp") no-repeat;
+  padding-left: 2rem;
+  margin: 2px 16px 2px 1px;
+}
+.taskbar nav .startMenu {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  bottom: 100%;
+  background: #bdbdbd;
+  border: white 2px outset;
+}
+.taskbar nav .startMenu li {
+  font-size: 2rem;
+  background-color: #bdbdbd;
+  width: 200px;
+  height: 100px;
+}
+.taskbar nav .startMenu li:hover {
+  background-color: #00007b;
+  color: white;
+}
+.taskbar nav::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  bottom: 2px;
+  border-left: white 2px inset;
+  border-right: white 2px inset;
+}
+.taskbar nav:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  bottom: 10px;
+  border: white 3px outset;
+}
+.taskbar .taskBarButton {
+  position: relative;
+  border: 1px black solid;
+  background-color: #bdbdbd;
+  height: 100%;
+  border: white 2px outset;
+  padding: 2px;
+  margin: 2px 1px;
+}
+.taskbar .taskBarButton:active {
+  border: white 2px inset;
+}
+.taskbar .taskBarButton.focus {
+  border: white 2px inset;
+}
+.taskbar .taskBarButton .contextMenu {
+  position: absolute;
+  width: 100px;
+  background: #bdbdbd;
+  border: white 2px outset;
+}
+.taskbar .taskBarButton .contextMenu li {
+  background-color: inherit;
+  width: 100%;
+  height: 2rem;
+}
+.taskbar .taskBarButton .contextMenu li:hover {
+  background: blue;
+}
+
+.desktop {
+  height: calc(100% - 50px);
+  background-color: #008080;
+}
+.desktop .icon {
+  position: absolute;
+  color: white;
+  padding: 10px;
+}
+.desktop .icon img {
+  height: 100px;
+  width: 100px;
+}
+.desktop .icon:focus div {
+  border: 1px white dotted;
+}
+.desktop .icon div {
+  width: 100px;
+  height: 20px;
+}
+.desktop .msWindow {
+  position: absolute;
+  border: white 2px outset;
+  background-color: white;
+}
+.desktop .msWindow .topBar {
+  width: 100%;
+  height: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#7b7b7b), to(#adadad));
+  background: linear-gradient(90deg, #7b7b7b 0%, #adadad 100%);
+  color: #bdbdbd;
+}
+.desktop .msWindow .topBar button {
+  height: 3rem;
+  width: 3rem;
+  -webkit-box-shadow: 1px 1px 0px 0px black;
+          box-shadow: 1px 1px 0px 0px black;
+}
+.desktop .msWindow.focus .topBar {
+  width: 100%;
+  height: 50px;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#00007b), to(#0884ce));
+  background: linear-gradient(90deg, #00007b 0%, #0884ce 100%);
+}
+.desktop .msWindow .edge {
+  position: absolute;
+}
+.desktop .msWindow .edge.top {
+  top: -2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: 4px;
+  cursor: ns-resize;
+}
+.desktop .msWindow .edge.top.maximized {
+  height: 0px;
+}
+.desktop .msWindow .edge.right {
+  right: -2px;
+  top: 2px;
+  height: calc(100% - 4px);
+  width: 4px;
+  cursor: ew-resize;
+}
+.desktop .msWindow .edge.right.maximized {
+  width: 0px;
+}
+.desktop .msWindow .edge.bottom {
+  bottom: -2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: 4px;
+  cursor: ns-resize;
+}
+.desktop .msWindow .edge.bottom.maximized {
+  height: 0px;
+}
+.desktop .msWindow .edge.left {
+  left: -2px;
+  top: 2px;
+  height: calc(100% - 4px);
+  width: 4px;
+  cursor: ew-resize;
+}
+.desktop .msWindow .edge.left.maximized {
+  width: 0px;
+}
+.desktop .msWindow .corner {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+}
+.desktop .msWindow .corner.top {
+  top: -2px;
+}
+.desktop .msWindow .corner.right {
+  right: -2px;
+}
+.desktop .msWindow .corner.bottom {
+  bottom: -2px;
+}
+.desktop .msWindow .corner.left {
+  left: -2px;
+}
+.desktop .msWindow .corner.top.right, .desktop .msWindow .corner.bottom.left {
+  cursor: nesw-resize;
+}
+.desktop .msWindow .corner.bottom.right, .desktop .msWindow .corner.top.left {
+  cursor: nwse-resize;
+}
+.desktop .msWindow.maximized {
+  border-width: 0px;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  padding: 0px;
+}
+.desktop .msWindow.maximized .edge.top, .desktop .msWindow.maximized .edge.bottom {
+  height: 0px;
+}
+.desktop .msWindow.maximized .edge.right, .desktop .msWindow.maximized .edge.left {
+  width: 0px;
+}
+.desktop .msWindow.maximized .corner.top, .desktop .msWindow.maximized .corner.right, .desktop .msWindow.maximized .corner.bottom, .desktop .msWindow.maximized .corner.left {
+  height: 0px;
+  width: 0px;
+}
+
+iframe {
+  height: calc(100% - 50px);
+  width: 100%;
+}
+iframe.moving {
+  pointer-events: none;
+}
+
+iframe {
+  pointer-events: none;
+}
+
+.focus iframe {
+  pointer-events: all;
+}
+.focus iframe.moving {
+  pointer-events: none;
+}
